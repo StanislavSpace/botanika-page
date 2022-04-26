@@ -1,0 +1,675 @@
+/* Start css*/
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: Montserrat, Arial , sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #AE7C78;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header start */
+.header{
+    margin-top: 25px;
+    padding: 7px 0 4px;
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+    position: relative;
+}
+
+.header-logo{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header-nav{
+  padding: 0;
+  margin: 0;
+}
+
+.header-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+}
+
+.header-item{
+  margin-right: 102px;
+  list-style: none;
+}
+
+.header-item:nth-child(3n){
+  margin-right: 225px;
+}
+
+.header-item:nth-child(4n){
+  margin-right: 89px;
+}
+
+.header-item:nth-child(5n){
+  margin-right: 89px;
+}
+
+.header-item:last-child{
+  margin-right: 0;
+}
+
+.header-link{
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #AE7C78;
+  text-decoration: none;
+}
+
+.header-link:hover, .header-link:active, .header-link:focus{
+  opacity: 0.75;
+}
+/* Header end */
+
+
+
+/* Intro start */
+
+.intro{
+  padding-top: 81px;
+  padding-bottom: 31px;
+}
+
+.intro .wrapper {
+    display: flex;
+}
+
+.intro-block{
+  max-width: 384px;
+  margin-right: 23px;
+}
+
+.intro-title{
+  font-family: Playfair Display, serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 59px;
+  width: 384px;
+  height: 118px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.intro-subtitle{
+  font-size: 24px;
+  line-height: 29px;
+  width: 384px;
+  height: 58px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  
+  margin-bottom: 65px;
+}
+
+.intro-catalog{
+    background: #D89999;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 30px 70px;
+    display: inline-block;
+    vertical-align: middle;
+    appearance: none;
+    border: none;
+  }
+
+.intro-catalog:hover, .intro-catalog:focus, .intro-catalog:active{
+  background: #88605d;
+}
+
+.intro-image {
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+}
+
+.intro-image:nth-of-type(1) {
+    margin-right: 20px;
+    margin-top: 60px;
+}
+/* Intro end */
+
+/* Benefits start */
+.benefits{
+  margin-top: 16px;
+}
+
+.benefits-cards{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2%;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-card{
+  display: flex;
+  align-items: flex-start;
+}
+
+.benefits-card-pic {
+  margin-right: 20px;
+}
+
+.benefits-card-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.benefits-card-desc{
+ margin: 0;
+}
+
+
+/* Benefits end */
+
+
+/* Popular start */
+.popular{
+  margin-top: 79px;
+}
+
+.popular-wrapper{
+  max-width: 794px;
+  margin: 0 auto;
+}
+
+.popular-title{
+  font-family: Playfair Display, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-left: 10px;
+}
+
+.popular-name{
+  padding-top: 29px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  width: 228px;
+  height: 29px;
+}
+
+.popular-desc{
+  padding-top: 25px;
+  line-height: 20px;
+  width: 387px;
+  height: 40px;
+}
+
+.popular-size{
+  padding-top: 33px;
+}
+
+.popular-price{ 
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 94px;
+}
+
+.popular-buy{
+  text-decoration: none;
+  color: white;
+  background: #D89999;
+  border-radius: 40px;
+  border: 0;
+  padding: 30px 105px 30px 107px;
+}
+
+.popular-buy:hover, .popular-buy:focus, .popular-buy:active{
+  background: #88605d;
+}
+
+.popular-image{
+  position: absolute;
+  width: 387px;
+  height: 438px;
+  left: 1000px;
+  top: 954px;
+}
+
+.popular-slider{
+  padding-top: 128px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.popular-slider a{
+  text-decoration: none;
+  padding: 0 8px 0 8px;
+}
+/* Popular end */
+
+/* Catalog start */
+
+.catalog-cards{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: 442px;
+    padding: 0;
+}
+
+.catalog-card{
+  border-radius: 10px;
+
+}
+
+.catalog-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(174, 124, 120, 0.6);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.catalog-link:hover, .catalog-link:focus, .catalog-link:active{
+  opacity: 1;
+  background: rgba(174, 124, 120, 0.8);
+}
+
+.catalog-card-title{
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.catalog-desc{
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* Catalog end */
+
+/* Discount start */
+
+.discount{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.discount-block{
+  display: flex;
+  background: #AE7C78;
+}
+
+.discount-text-block{
+  padding: 40px 22px 64px 102px;
+}
+
+.discount-title{
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.discount-desc{
+   font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 387px;
+}
+
+
+/* Discount end */
+
+/* Steps start */
+.steps{
+  margin-bottom: 80px;
+}
+
+.steps-title{
+  text-align: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.steps-list{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.steps-item{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.steps-item:last-child {
+    margin-right: 0;
+}
+
+.steps-image {
+    margin-bottom: 8px;
+}
+
+.steps-card-title{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.steps-card-desc{
+  margin: 0;
+}
+/* Steps end */
+
+/* News start */
+
+.news{
+  margin-bottom: 80px;
+}
+
+.news .wrapper{
+  display: flex;
+}
+
+.news-block {
+    max-width: 487px;
+    padding-top: 69px;
+    margin-right: 20px;
+}
+
+.news-title{
+  font-family: Playfair Display, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.news-text{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 387px;
+}
+
+.social-list{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item{
+  margin-right: 20px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.news-images{
+  display: grid;
+  grid-template-columns: 285px 387px;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.news-images img:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.news-images img:nth-child(3) {
+    grid-row: 1/3;
+}
+
+/* News end */
+
+/* Reviews start */
+
+.reviews{
+  margin-bottom: 80px;
+}
+
+.reviews .wrapper {
+    border: 1px solid #AE7C78;
+    padding: 40px 44px 64px;
+    box-sizing: border-box;
+}
+
+.reviews-title{
+  text-align: center;
+  font-family: Playfair Display, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 106px;
+}
+
+.reviews-item {
+    text-align: center;
+}
+
+.reviews-item blockquote {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.reviews-item cite {
+    font-style: normal;
+    font-weight: 500;
+}
+/* Reviews end */
+
+/* Contacts start */
+
+.map {
+    position: relative;
+    padding-top: 47px;
+    padding-bottom: 69px;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.contacts {
+    margin-left: 177px;
+    max-width: 386px;
+    padding: 40px 108px 65px 35px;
+    font-size: 16px;
+    line-height: 20px;
+    background: #F7FAFC;
+    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    z-index: 2;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contacts-heading {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.contacts dl {
+    margin: 0;
+}
+
+.contacts dt {
+    margin-bottom: 17px;
+}
+
+.contacts dd {
+    font-weight: 500;
+    margin-bottom: 28px;
+    margin-left: 0;
+}
+
+.contacts dd:last-child {
+    margin: 0;
+}
+
+/* Contacts end*/
+
+/* Footer start*/
+
+.page-footer {
+    background: #AE7C78;
+    color: #FFFFFF;
+    padding: 25px 0 38px;
+}
+
+.page-footer .wrapper {
+    display: flex;
+}
+
+.page-footer .logo {
+    position: static;
+    transform: none;
+    margin-left: 5px;
+    margin-right: 103px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 19px;
+}
+
+.footer-nav-item {
+    margin-right: 69px;
+}
+
+.footer-nav-link {
+    color: #FFFFFF;
+}
+
+.page-footer .social-list {
+    margin-left: auto;
+    align-items: center;
+}
+
+.page-footer .social-item {
+    margin-right: 17px;
+}
+
+.page-footer .social-item:last-child {
+    margin-right: 0;
+}
+
+/* Footer end*/
